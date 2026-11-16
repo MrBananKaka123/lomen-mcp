@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.MrBananKaka123/lomen",
+  "title": "Lomen",
+  "description": "Ask about your website traffic, sources and AI insights from Lomen analytics",
+  "version": "1.0.0",
+  "websiteUrl": "https://lomenanalytics.com/",
+  "icons": [
+    {
+      "src": "https://lomenanalytics.com/icon-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://lomenanalytics.com/mcp"
+    }
+  ]
+}

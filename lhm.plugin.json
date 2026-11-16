@@ -1,0 +1,12 @@
+{
+  "identifier": "lomen-analytics",
+  "name": "Lomen Analytics",
+  "version": "1.0.0",
+  "author": "Lomen",
+  "authorUrl": "https://lomenanalytics.com",
+  "homepage": "https://lomenanalytics.com",
+  "icon": "https://lomenanalytics.com/icon-512.png",
+  "description": "Read-only MCP server for Lomen website analytics: ask about pageviews, visitors, sources and unusual days. Public beta, free during the beta.",
+  "tags": ["analytics", "web-analytics", "website-traffic", "privacy", "cookie-free", "remote", "oauth"],
+  "cloudEndpoint": "https://lomenanalytics.com/mcp"
+}
