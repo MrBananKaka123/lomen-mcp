@@ -6,7 +6,97 @@
   "authorUrl": "https://lomenanalytics.com",
   "homepage": "https://lomenanalytics.com",
   "icon": "https://lomenanalytics.com/icon-512.png",
+  "category": "business",
   "description": "Read-only MCP server for Lomen website analytics: ask about pageviews, visitors, sources and unusual days. Public beta, free during the beta.",
-  "tags": ["analytics", "web-analytics", "website-traffic", "privacy", "cookie-free", "remote", "oauth"],
-  "cloudEndpoint": "https://lomenanalytics.com/mcp"
+  "tags": [
+    "analytics",
+    "web-analytics",
+    "website-traffic",
+    "privacy",
+    "cookie-free",
+    "remote",
+    "oauth"
+  ],
+  "cloudEndpoint": "https://lomenanalytics.com/mcp",
+  "tools": [
+    {
+      "name": "list_sites",
+      "title": "List my sites",
+      "description": "List the websites tracked in this Lomen account, with their domain, id and the date they were added. One site per account in this version.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "annotations": {
+        "title": "List my sites",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_website_overview",
+      "title": "Get website traffic overview",
+      "description": "Get the real traffic metrics for the signed-in account's tracked website over the last 30 days: total pageviews, unique visitors, visits, the daily series, top pages, entry and exit pages, traffic sources, referring hosts, device breakdown, countries, browsers, operating systems, screen sizes, campaigns, bounce rate, average visit length, new vs returning visitors and how many visitors are on the site right now.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "annotations": {
+        "title": "Get website traffic overview",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "generate_ai_insight",
+      "title": "Generate an AI insight",
+      "description": "Generate a short, factual AI insight from the signed-in account's real website traffic over the last 30 days (pageview trend, top source, unique visitors).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "annotations": {
+        "title": "Generate an AI insight",
+        "readOnlyHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "investigate_traffic_day",
+      "title": "Investigate one day's traffic",
+      "description": "Explain why traffic on one day differed from usual for the signed-in account's tracked website. Compares the day (in the site's time zone) with the same weekday in earlier weeks, says how unusual it is, whether more visitors or more pages per visitor drove it, and which sources, referring URLs, landing pages and UTM campaigns account for the change and what share each. It states plainly when the data cannot attribute the change (for example when it arrived with no referrer). Correlation is reported as correlation, never as a cause.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "description": "The day to explain, YYYY-MM-DD. Defaults to today in the site's time zone."
+          }
+        }
+      },
+      "annotations": {
+        "title": "Investigate one day's traffic",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    },
+    {
+      "name": "get_subscription",
+      "title": "Get my Lomen subscription",
+      "description": "Get the signed-in user's Lomen plan, subscription status and billing interval (monthly or annual).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      },
+      "annotations": {
+        "title": "Get my Lomen subscription",
+        "readOnlyHint": true,
+        "idempotentHint": true,
+        "openWorldHint": false
+      }
+    }
+  ]
 }
