@@ -2,7 +2,7 @@
 
 Ask your AI assistant about your website traffic.
 
-We make [Lomen](https://lomenanalytics.com), website analytics with a tracking script that sets no cookies. This repository holds the listing files for our remote MCP server. It contains no application code: the server is a hosted service, and its source is private.
+We make [Lomen](https://lomenanalytics.com/?utm_source=github&utm_medium=directory&utm_campaign=mcp-directories), website analytics with a tracking script that sets no cookies. This repository holds the listing files for our remote MCP server. It contains no application code: the server is a hosted service, and its source is private.
 
 ## Connect
 
@@ -33,5 +33,5 @@ All five tools are read-only. None of them can change a setting, add or remove a
 Lomen is in public beta and free during the beta. Paid plans are planned, and the pricing is not final. Lomen does not do custom events or funnels.
 
 - Registry name: `io.github.MrBananKaka123/lomen` in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.MrBananKaka123/lomen)
-- Docs: https://lomenanalytics.com/docs#connections
+- Docs: https://lomenanalytics.com/docs?utm_source=github&utm_medium=directory&utm_campaign=mcp-directories#connections
 - Contact: gustav@lomenanalytics.com
